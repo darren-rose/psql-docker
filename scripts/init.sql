@@ -1,6 +1,5 @@
 DO $$
 BEGIN
-
     CREATE USER google PASSWORD 'password';
     GRANT SELECT ON ALL TABLES IN SCHEMA public TO google;
     CREATE SCHEMA google;
@@ -9,6 +8,5 @@ BEGIN
     RAISE NOTICE 'not creating -- already exists';
 END
 $$;
-
 
 
